@@ -28,36 +28,3 @@ class Main extends StatelessWidget {
     );
   }
 }
-
-void helper() => runApp(MaterialApp(
-      home: Homepage(),
-    ));
-
-class Homepage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text('Sqflite'),
-        ),
-        body: Column(children: <Widget>[
-          FlatButton(
-            onPressed: () {},
-            child: Text('insert'),
-            color: Colors.grey[400],
-          ),
-          FlatButton(
-            onPressed: () {},
-            child: Text('query'),
-            color: Colors.green,
-          ),
-          FlatButton(
-            onPressed: () {},
-            child: Text('update'),
-            color: Colors.blue[100],
-          ),
-          FlatButton(
-              onPressed: () {}, child: Text('delete'), color: Colors.red[200]),
-        ]));
-  }
-}
